@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Corazonada — banda sonora</title>
+  <meta name="description" content="Las canciones de Natalia en «La Corazonada», novela de Robert Fader.">
+  <meta property="og:title" content="La Corazonada — banda sonora">
+  <meta property="og:description" content="Las canciones de Natalia, con versos de Oxana.">
+  <meta property="og:image" content="assets/img/hero-violin.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="dust" aria-hidden="true"></div>
+
+  <header class="hero">
+    <img class="hero-bg" src="assets/img/hero-violin.jpg" alt="">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">República Turquesa · Banda sonora</p>
+      <h1>La <em>Corazonada</em></h1>
+      <p class="lead">Las canciones de Natalia, con versos de Oxana.</p>
+      <p class="quote">«—No sabía que cantaras tan bien.<br>—Yo tampoco. ¡Esto es gracias a tus versos!»</p>
+      <button class="btn" id="playAll" type="button">▶ Escuchar desde el principio</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <img class="cover" src="assets/img/cover.jpg" alt="Portada de «La Corazonada»">
+      <div>
+        <h2>La violinista que descubrió su voz</h2>
+        <p>En la fortaleza turquesa, Natalia tocaba el violín para que la gente no olvidara la belleza. Oxana pintaba y, en un cuaderno que no le mostraba a nadie, escribía poemas. Una tarde se lo mostró. Natalia leyó dos veces, apoyó el violín en el hombro y, sin haberlo planeado, empezó a cantar.</p>
+        <p>Desde entonces, cuando las palabras no alcanzan en la Utopía, canta Natalia.</p>
+      </div>
+    </section>
+
+    <h2 class="section-title">Canciones</h2>
+    <ol class="tracks" id="tracks"></ol>
+
+    <section class="lyrics" id="lyrics" hidden>
+      <p class="eyebrow" id="lyricsScene"></p>
+      <h2 id="lyricsTitle"></h2>
+      <div id="lyricsBody" class="lyrics-body"></div>
+    </section>
+
+    <h2 class="section-title">Natalia</h2>
+    <div class="gallery">
+      <figure><img src="assets/img/natalia-retrato.jpg" alt="Natalia junto a las motos, al llegar a la colina" loading="lazy"><figcaption>La llegada a la colina</figcaption></figure>
+      <figure><img src="assets/img/natalia-piedra.jpg" alt="Natalia y Robert levantando una piedra turquesa" loading="lazy"><figcaption>Construyendo la fortaleza</figcaption></figure>
+      <figure><img src="assets/img/hero-violin.jpg" alt="Natalia toca el violín al atardecer mientras Robert la escucha" loading="lazy"><figcaption>El violín del «Sueño Turquesa»</figcaption></figure>
+    </div>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Música y letras: Luis Fader · De la novela <a href="https://luisfader.github.io/litmir/?lang=es#/la-corazonada">«La Corazonada»</a> en Literatura antes de dormir.</p>
+  </footer>
+
+  <div class="player" id="player" hidden>
+    <button class="pbtn" id="prev" type="button" aria-label="Anterior">⏮</button>
+    <button class="pbtn big" id="toggle" type="button" aria-label="Reproducir">▶</button>
+    <button class="pbtn" id="next" type="button" aria-label="Siguiente">⏭</button>
+    <div class="pinfo">
+      <span id="nowTitle"></span>
+      <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Posición">
+    </div>
+    <span class="ptime" id="time">0:00</span>
+  </div>
+  <audio id="audio" preload="none"></audio>
+
+  <script src="assets/js/canciones.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

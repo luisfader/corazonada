@@ -1,0 +1,162 @@
+/* Desierto al atardecer y una fortaleza turquesa. Cuando canta Natalia, el cielo se vuelve turquesa y el polvo brilla. */
+:root {
+  --bg: #1a1210;
+  --bg2: #241915;
+  --line: #3d2c24;
+  --ink: #f1e6da;
+  --muted: #b09a88;
+  --accent: #e2a35a;      /* arena dorada */
+  --turq1: #3fd0c9;       /* cielo turquesa */
+  --turq2: #1f8f9a;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Inter", system-ui, sans-serif;
+}
+body.is-playing { --accent: var(--turq1); }
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.6 var(--sans); padding-bottom: 96px; transition: background 2s;
+}
+body.is-playing { background: #0f1a1c; }
+a { color: var(--accent); }
+
+.wrap { max-width: 900px; margin: 0 auto; padding: 0 16px; }
+
+/* estrellas del desierto */
+.stars {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: .45;
+  background-image:
+    radial-gradient(1.5px 1.5px at 12% 22%, #fff3e0 50%, transparent 51%),
+    radial-gradient(1px 1px at 64% 48%, #fff3e0 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 38% 78%, #ffe2c4 50%, transparent 51%),
+    radial-gradient(1px 1px at 86% 12%, #fff3e0 50%, transparent 51%);
+  background-size: 240px 240px, 190px 190px, 280px 280px, 150px 150px;
+  animation: twinkle 6s ease-in-out infinite alternate; transition: opacity 2s;
+}
+@keyframes twinkle { to { opacity: .2; } }
+body.is-playing .stars { opacity: .7; }
+
+/* polvo turquesa que sube con la música */
+.dust {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: 0;
+  background-image:
+    radial-gradient(2px 2px at 20% 90%, var(--turq1) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 70% 70%, var(--turq1) 50%, transparent 51%),
+    radial-gradient(2.5px 2.5px at 45% 55%, #9ff3ec 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 90% 85%, var(--turq1) 50%, transparent 51%);
+  background-size: 230px 230px, 170px 170px, 270px 270px, 150px 150px;
+  animation: dust 18s linear infinite; transition: opacity 2s;
+}
+@keyframes dust { to { background-position: 30px -230px, -20px -170px, 15px -270px, -10px -150px; } }
+body.is-playing .dust { opacity: .5; }
+@media (prefers-reduced-motion: reduce) { .stars, .dust { animation: none; } }
+
+header, main, footer { position: relative; z-index: 1; }
+
+/* portada con Natalia y el violín */
+.hero { position: relative; min-height: 78vh; display: flex; align-items: flex-end; overflow: hidden; }
+.hero-bg {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 35%;
+  filter: saturate(.8) brightness(.75); transition: filter 2.5s;
+}
+body.is-playing .hero-bg { filter: saturate(1.05) brightness(.85) hue-rotate(-12deg); }
+.hero-shade {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(26,18,16,.15) 0%, rgba(26,18,16,.55) 55%, var(--bg) 100%),
+              linear-gradient(90deg, rgba(26,18,16,.85) 0%, rgba(26,18,16,.2) 65%);
+  transition: background 2s;
+}
+body.is-playing .hero-shade {
+  background: linear-gradient(180deg, rgba(15,26,28,.1) 0%, rgba(15,26,28,.55) 55%, #0f1a1c 100%),
+              linear-gradient(90deg, rgba(15,26,28,.85) 0%, rgba(15,26,28,.15) 65%);
+}
+.hero-inner { position: relative; padding-top: 80px; padding-bottom: 48px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 12px; color: var(--muted); margin: 0 0 8px; }
+h1 { font: 700 clamp(48px, 9vw, 92px)/.95 var(--serif); margin: 0 0 16px; text-shadow: 0 4px 30px rgba(0,0,0,.5); }
+h1 em { font-weight: 500; color: var(--accent); transition: color 1.5s; }
+body.is-playing h1 em {
+  background: linear-gradient(90deg, var(--turq1), #9ff3ec, var(--turq2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.lead { font-size: 19px; margin: 0 0 14px; max-width: 30em; }
+.quote {
+  font: italic 500 21px/1.4 var(--serif); color: var(--ink); opacity: .9; max-width: 28em;
+  border-left: 2px solid var(--accent); padding-left: 14px; margin: 0 0 26px; transition: border-color 1.5s;
+}
+.btn {
+  font: 600 15px var(--sans); color: #1a1210; background: var(--accent);
+  border: 0; border-radius: 999px; padding: 12px 22px; cursor: pointer; transition: background 1.5s, transform .15s;
+}
+.btn:hover { transform: translateY(-1px); }
+
+.intro { display: grid; grid-template-columns: 180px 1fr; gap: 28px; align-items: start; margin-top: 24px; }
+.cover { width: 100%; border-radius: 6px; box-shadow: 0 20px 50px rgba(0,0,0,.6); }
+.intro h2 { font: 700 28px/1.15 var(--serif); margin: 0 0 10px; }
+.intro p { margin: 0 0 12px; color: var(--ink); opacity: .9; }
+
+.section-title { font: 700 32px var(--serif); margin: 44px 0 12px; }
+
+.tracks { list-style: none; margin: 0; padding: 0; }
+.track {
+  display: grid; grid-template-columns: 44px 1fr auto; gap: 16px; align-items: start;
+  padding: 18px 12px; border-bottom: 1px solid var(--line); cursor: pointer; border-radius: 10px; transition: background .2s;
+}
+.track:hover, .track.active { background: var(--bg2); }
+body.is-playing .track.active { background: rgba(63,208,201,.08); }
+.tplay {
+  width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line);
+  background: transparent; color: var(--ink); font-size: 15px; cursor: pointer;
+}
+.track.active .tplay { background: var(--accent); color: #1a1210; border-color: var(--accent); }
+.tmeta { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ttitle { font: 700 25px/1.2 var(--serif); }
+.track.active .ttitle { color: var(--accent); }
+.tscene { font-size: 13px; color: var(--muted); }
+.tchap { white-space: nowrap; }
+.tnote { font-size: 14px; opacity: .85; margin-top: 4px; }
+.tdur { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 14px; padding-top: 12px; }
+
+.lyrics { margin: 44px 0 24px; padding: 28px; background: var(--bg2); border-radius: 12px; border: 1px solid var(--line); }
+.lyrics h2 { font: 700 36px var(--serif); margin: 0 0 16px; color: var(--accent); transition: color 1.5s; }
+.lyrics-body p { font: 500 21px/1.5 var(--serif); margin: 0 0 18px; }
+.lyrics-body .chorus { padding-left: 14px; border-left: 2px solid var(--accent); font-style: italic; }
+.lyrics-body .label { display: block; font: 600 11px var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-style: normal; margin-bottom: 4px; }
+.muted { color: var(--muted); }
+
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 10px; display: block; box-shadow: 0 14px 34px rgba(0,0,0,.45); }
+.gallery figcaption { font: italic 500 17px var(--serif); color: var(--muted); margin-top: 6px; }
+
+.foot { color: var(--muted); font-size: 13px; padding-top: 36px; padding-bottom: 32px; }
+
+.player {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
+  display: flex; align-items: center; gap: 10px; padding: 12px 16px;
+  background: rgba(20,14,12,.94); backdrop-filter: blur(8px); border-top: 1px solid var(--line);
+}
+body.is-playing .player { background: rgba(12,22,24,.94); }
+.player[hidden] { display: none; }
+.pbtn { background: none; border: 0; color: var(--ink); font-size: 18px; cursor: pointer; padding: 6px; }
+.pbtn.big { width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: #1a1210; transition: background 1.5s; }
+.pinfo { flex: 1; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+#nowTitle { font: 700 17px var(--serif); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#seek { width: 100%; accent-color: var(--accent); }
+.ptime { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+
+@media (max-width: 640px) {
+  .hero { min-height: 70vh; }
+  .hero-bg { object-position: 72% 30%; }
+  .hero-inner { padding-top: 48px; padding-bottom: 32px; }
+  .intro { grid-template-columns: 1fr; }
+  .cover { width: 140px; }
+  .gallery { grid-template-columns: 1fr 1fr; }
+  .gallery figure:last-child { grid-column: 1 / -1; }
+  .gallery figure:last-child img { aspect-ratio: 16/10; }
+  .track { grid-template-columns: 40px 1fr; }
+  .tdur { display: none; }
+  .tplay { width: 40px; height: 40px; }
+  .lyrics { padding: 20px; }
+}
