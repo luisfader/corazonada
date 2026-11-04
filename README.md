@@ -1,6 +1,6 @@
 # La Corazonada — banda sonora
 
-Las canciones de Natalia, con versos de Oxana, de la novela **«La Corazonada»** de Luis Fader.
+Las canciones de Natalia, de la novela **«La Corazonada»** de Luis Fader.
 
 > En la fortaleza turquesa, Natalia tocaba el violín. Un día Oxana le mostró un poema, y Natalia descubrió que también sabía cantar.
 
