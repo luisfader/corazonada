@@ -52,5 +52,19 @@ window.CANCIONES = [
     escena: "Otra vez en la misma trampa",
     nota: "Bandoneón, guitarras y rap a toda velocidad para hablarle a la humanidad como a una vieja conocida que siempre vuelve a la misma esquina. Esta vez, alguien le guardó un lugar junto al fogón.",
     duracion: "4:20"
+  },
+  {
+    id: "08-al-mejor-postor",
+    titulo: "Al mejor postor",
+    escena: "Para los que se venden",
+    nota: "Solo rap, motores lejanos y un coro de voces graves para los que cambian de patrón como de remera. Y una puerta abierta para el que se canse de tener precio.",
+    duracion: "3:26"
+  },
+  {
+    id: "09-manana-siempre-es-mejor-version-rap",
+    titulo: "Mañana siempre es mejor (versión rap)",
+    escena: "Para vos, mi amor",
+    nota: "La canción que Natalia cantó en la plaza, convertida en rap por una sola voz, con violín y piano. Un homenaje.",
+    duracion: "3:23"
   }
 ];
