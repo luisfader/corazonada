@@ -38,5 +38,12 @@ window.CANCIONES = [
     escena: "Los clanes y la fortaleza se dan la mano",
     nota: "Tambores que marchan por el desierto y un coro de multitud que le canta de frente a la Potencia Central: vienen por las tierras raras, pero cada amanecer nos encuentra de pie.",
     duracion: "3:22"
+  },
+  {
+    id: "06-reyes-bajo-tierra",
+    titulo: "Reyes bajo tierra",
+    escena: "El palacio debajo de la arena",
+    nota: "Mientras arriba el pueblo pelea por calor, unos pocos se encerraron bajo tierra con la despensa llena y luz de mentira. Rap rápido y sarcástico, hasta que se abren las compuertas.",
+    duracion: "3:49"
   }
 ];
