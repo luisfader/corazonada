@@ -31,5 +31,12 @@ window.CANCIONES = [
     escena: "La misma búsqueda, cantada",
     nota: "Otra forma de contar el camino del búnker al fogón: menos rap y más melodía.",
     duracion: "4:00"
+  },
+  {
+    id: "05-rutas",
+    titulo: "Rutas",
+    escena: "Los clanes y la fortaleza se dan la mano",
+    nota: "Tambores que marchan por el desierto y un coro de multitud que le canta de frente a la Potencia Central: vienen por las tierras raras, pero cada amanecer nos encuentra de pie.",
+    duracion: "3:22"
   }
 ];
