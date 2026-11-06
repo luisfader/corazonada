@@ -174,3 +174,5 @@ body.is-playing .player { background: rgba(12,22,24,.94); }
 .band-card img { width: 120px; height: 120px; object-fit: cover; border-radius: 6px; flex: none; box-shadow: 0 10px 24px rgba(0,0,0,.5); }
 .band-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 @media (max-width: 640px) { .band-card img { width: 84px; height: 84px; } .band-name { font-size: 30px; } }
+.band-card.antitango { margin-top: 16px; background: linear-gradient(120deg, #150608, #3a0b12); border-color: #4d1a20; border-left-color: #e0312b; }
+.band-card.antitango .band-name { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 900; text-transform: none; color: #f1e6d2; }

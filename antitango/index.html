@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antitango — «Milonga del fin del mundo»</title>
+  <meta name="description" content="Antitango, tango y rap de antes de la Gran Catástrofe. Disco «Milonga del fin del mundo». El grupo favorito de Natalia.">
+  <meta property="og:title" content="Antitango — «Milonga del fin del mundo»">
+  <meta property="og:description" content="Tango y rap de antes del fin del mundo. El grupo favorito de Natalia.">
+  <meta property="og:image" content="https://luisfader.github.io/corazonada/antitango/img/milonga-del-fin-del-mundo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/milonga-del-fin-del-mundo-400.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <header class="hero">
+    <img class="hero-bg" src="img/milonga-del-fin-del-mundo.jpg" alt="">
+    <nav class="wrap top"><a href="../">← La Corazonada</a></nav>
+    <div class="wrap hero-inner">
+      <img class="album-cover" src="img/milonga-del-fin-del-mundo.jpg" alt="Portada de «Milonga del fin del mundo»: un bandoneón abierto delante de un sol rojo, sobre fondo bordó" width="600" height="600">
+      <div class="hero-text">
+        <p class="eyebrow">Disco · Antitango</p>
+        <h1>Milonga del <span>fin del mundo</span></h1>
+        <p class="meta"><strong>Antitango</strong> · Tango y rap · Argentina · <span id="albumMeta"></span></p>
+        <p class="fav">♥ El grupo favorito de Natalia</p>
+        <button class="btn" id="playAll" type="button">▶ Escuchar el disco</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <ol class="tracks" id="tracks"></ol>
+
+    <section class="about">
+      <h2>La banda</h2>
+      <p>Antitango tocaba en milongas de barrio y en sótanos con olor a humedad, en los últimos años del mundo viejo. Eran una cantante con voz de tango y un rapero que no sabía bailar, con bandoneón, violín, contrabajo y una caja de ritmos que siempre estaba por romperse. Se llamaban así porque se negaban a la tristeza del tango: querían el fueye con rabia, no con resignación.</p>
+      <p>Grabaron un solo disco, <em>Milonga del fin del mundo</em>, poco antes de la guerra. Hablaban de misiles en la tele, de ricos cavando sótanos, de ciudades sin cielo. En su momento parecían exageraciones. Después, muchos las escucharon como advertencias.</p>
+      <p>De la banda no se supo más. El disco sobrevivió en copias rayadas que pasaron de mano en mano. Era el grupo favorito de Natalia, y su canción preferida era «Tango para después», la que le habla a quien quede del otro lado y le pide, si tiene un violín, que toque esa melodía.</p>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <a href="../">← Las canciones de Natalia</a> · <a href="../proyecto-r/">Proyecto R →</a>
+  </footer>
+
+  <div class="player" id="player" hidden>
+    <img class="pcover" src="img/milonga-del-fin-del-mundo-400.jpg" alt="" width="48" height="48">
+    <div class="pinfo">
+      <span id="nowTitle"></span>
+      <span id="nowSub"></span>
+    </div>
+    <div class="pctrl">
+      <button class="pbtn" id="prev" type="button" aria-label="Anterior">⏮</button>
+      <button class="pbtn big" id="toggle" type="button" aria-label="Reproducir">▶</button>
+      <button class="pbtn" id="next" type="button" aria-label="Siguiente">⏭</button>
+    </div>
+    <div class="pseek">
+      <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Posición">
+      <span class="ptime" id="time">0:00</span>
+    </div>
+  </div>
+  <audio id="audio" preload="none"></audio>
+
+  <script src="canciones.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
