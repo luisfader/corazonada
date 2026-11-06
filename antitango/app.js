@@ -31,6 +31,7 @@
         <span class="tdur">${c.audio === false ? "pronto" : esc(c.duracion || "")}</span>
       </div>
       <div class="tbody" hidden>
+        ${c.portada ? `<img class="tcover" src="${esc(c.portada)}" alt="Portada de «${esc(c.titulo)}»" loading="lazy">` : ""}
         ${c.nota ? `<p class="tnote">${esc(c.nota)}</p>` : ""}
         <div class="lyrics-body"><p class="muted">Cargando la letra…</p></div>
       </div>
@@ -88,6 +89,8 @@
       openLyrics(i, true);
       items[i].scrollIntoView({ behavior: "smooth", block: "start" });
     }
+    const pc = document.querySelector(".pcover");
+    if (pc) { pc.dataset.def = pc.dataset.def || pc.getAttribute("src"); pc.src = c.portada || pc.dataset.def; }
     $("player").hidden = false;
     $("nowTitle").textContent = c.titulo;
     const A = window.ALBUM || {};

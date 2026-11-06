@@ -127,3 +127,4 @@ h1 { text-transform: none; font-weight: 900; font-style: italic; letter-spacing:
 .tnum { font-family: var(--display); font-style: italic; }
 .fav { margin: -12px 0 22px; color: var(--red); font-weight: 600; font-size: 14px; letter-spacing: .04em; }
 .album-cover { border-radius: 2px; }
+.tcover { display: block; width: 100%; max-width: 560px; height: auto; border-radius: 6px; margin: 4px 0 20px; box-shadow: 0 16px 40px rgba(0,0,0,.5); }
