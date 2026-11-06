@@ -4,13 +4,12 @@
 // El campo "estilo" de cada letra (comentario <!-- estilo: … -->) sirve de prompt para generar la música.
 window.CANCIONES = [
   {
-    id: "01-lucha-de-dos",
-    titulo: "Lucha de Dos",
+    id: "01-la-lucha-de-a-dos",
+    titulo: "La lucha de a dos",
     voz: "Proyecto R",
     escena: "Dos contra el sistema",
     capitulo: "Pista 1 · drop D · 100 bpm",
     nota: "Una canción de amor en medio del caos, sin gritos: arranca y termina en susurros, versos rapeados, estribillo melódico y un breakdown antes del último estribillo.",
-    duracion: "3:35",
-    audio: false
+    duracion: "3:18"
   }
 ];

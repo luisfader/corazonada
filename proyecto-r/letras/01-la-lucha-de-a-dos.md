@@ -1,6 +1,6 @@
-# Lucha de Dos
+# La lucha de a dos
 
-<!-- estilo: nu metal, rock argentino, drop-tuned guitars, male vocals, no screaming, rapped verses, melodic sung chorus, whispered vocals in the bridge and outro, 100 bpm, breakdown. Duración objetivo: ~3:35 -->
+<!-- estilo: nu metal, rock argentino, drop-tuned guitars, male vocals, no screaming, rapped verses, melodic sung chorus, whispered vocals in the bridge and outro, 100 bpm, breakdown. Duración: 3:18 -->
 
 [Intro]
 *(riff de guitarra afinada en drop, 8 compases)*
