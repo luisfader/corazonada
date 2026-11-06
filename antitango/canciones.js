@@ -30,5 +30,6 @@ window.CANCIONES = [
     nota: "Una mujer de sombra que despierta en medio de la noche y no deja dormir: el insomnio convertido en fantasma, belleza que no corta pero hiere.", duracion: "4:04" },
   { id: "14-aquella-vez", titulo: "Aquella vez", escena: "El primer amor", portada: "img/aquella-vez.jpg",
     nota: "Chelo, guitarra y una voz de barítono para recordar la primera vez: la luna cómplice, el beso torpe y la risa. Nadie borra aquel sí.", duracion: "3:27" },
-  { id: "15-el-tango-de-la-confusion", titulo: "El tango de la confusión", escena: "Cuando nada está claro", duracion: "2:46" }
+  { id: "15-el-tango-de-la-confusion", titulo: "El tango de la confusión", escena: "Donde el «nunca más» suena a «tal vez»",
+    nota: "La cabeza acepta el final, pero algo no cuadra: un baile torcido de lógica y fe, con la confusión como única compañera leal.", duracion: "2:46" }
 ];
