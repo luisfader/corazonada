@@ -21,5 +21,7 @@ window.CANCIONES = [
   { id: "08-tango-para-despues", titulo: "Tango para después", escena: "Para el que esté del otro lado",
     nota: "Un mensaje para quien sobreviva: juntá a los que quedaron, levantá un muro con una puerta abierta y, si tenés un violín, tocá esta melodía. La favorita de Natalia.", audio: false },
   { id: "09-nadie-baila-solo", titulo: "Nadie baila solo", escena: "La milonga del barrio",
-    nota: "Si te caés, te levanto; si me caigo, estás vos. El cierre del disco, para cantar todos juntos.", audio: false }
+    nota: "Si te caés, te levanto; si me caigo, estás vos. El cierre del disco, para cantar todos juntos.", audio: false },
+  { id: "10-tu-amor-es-de-mentira", titulo: "Tu amor es de mentira", escena: "Un amor que no era", duracion: "3:06" },
+  { id: "11-naufrago-de-tu-amor", titulo: "Náufrago de tu amor", escena: "A la deriva", duracion: "2:58" }
 ];
