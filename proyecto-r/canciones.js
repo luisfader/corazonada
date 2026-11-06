@@ -74,3 +74,47 @@ window.CANCIONES = [
     duracion: "3:55"
   }
 ];
+
+// Traducciones de títulos, escenas y notas. Las letras traducidas están en letras/ru/ y letras/en/, con el mismo id.
+window.TRADUCCIONES = {
+  "01-la-lucha-de-a-dos": {
+    ru: { titulo: "Борьба вдвоём", escena: "Двое ради надежды", nota: "Песня о любви посреди хаоса: она начинается и заканчивается шёпотом, а между ними — двое, которые выбирают друг друга, даже когда мир хочет их разлучить." },
+    en: { titulo: "The Fight for Two", escena: "Two for hope", nota: "A love song in the middle of chaos: it starts and ends in whispers, and in between, two people who choose each other even though the world wants to tear them apart." }
+  },
+  "02-nuestro-san-jorge": {
+    ru: { titulo: "Наш Святой Георгий", escena: "Железный рыцарь против имперского змея", nota: "Рыцарь на мотоцикле, крепость с бирюзовыми стенами и змей из гусениц и стали, который обещает свободу, но идёт за недрами." },
+    en: { titulo: "Our Saint George", escena: "The iron knight against the imperial serpent", nota: "A knight on a motorbike, a fortress with turquoise walls and a serpent of tank treads and steel that promises freedom but is really after what lies underground." }
+  },
+  "03-mi-corazonada": {
+    ru: { titulo: "Моё предчувствие", escena: "Из бункера к костру", nota: "Семьсот тридцать дней взаперти, старый мотоцикл и опустевший мир. Песня начинается как вопрос в одиночестве и заканчивается у огня, где пятьдесят человек больше не одни." },
+    en: { titulo: "My Hunch", escena: "From the bunker to the campfire", nota: "Seven hundred thirty days locked away, an old motorbike and an empty world. It starts as a question asked in loneliness and ends around the fire, with fifty people who are no longer alone." }
+  },
+  "04-mi-corazonada-version-melodica": {
+    ru: { titulo: "Моё предчувствие (мелодичная версия)", escena: "Те же поиски, но спетые", nota: "Другой способ рассказать о пути из бункера к костру: меньше рэпа и больше мелодии." },
+    en: { titulo: "My Hunch (melodic version)", escena: "The same search, sung", nota: "Another way of telling the journey from the bunker to the campfire: less rap and more melody." }
+  },
+  "05-rutas": {
+    ru: { titulo: "Дороги", escena: "Кланы и крепость протягивают друг другу руки", nota: "Барабаны, марширующие по пустыне, и хор толпы, который поёт прямо в лицо Центральной Державе: они пришли за редкоземельными металлами, но каждый рассвет застаёт нас на ногах." },
+    en: { titulo: "Roads", escena: "The clans and the fortress shake hands", nota: "Drums marching across the desert and a crowd chorus singing straight at the Central Power: they come for the rare earths, but every dawn finds us standing." }
+  },
+  "06-reyes-bajo-tierra": {
+    ru: { titulo: "Короли под землёй", escena: "Дворец под песком", nota: "Пока наверху народ дерётся за тепло, немногие заперлись под землёй с полной кладовой и фальшивым светом. Быстрый и саркастичный рэп — до тех пор, пока не откроются шлюзы." },
+    en: { titulo: "Kings Underground", escena: "The palace beneath the sand", nota: "While up above the people fight for warmth, a few have locked themselves underground with a full pantry and fake light. Fast, sarcastic rap, until the floodgates open." }
+  },
+  "07-humanidad": {
+    ru: { titulo: "Человечество", escena: "Снова в той же ловушке", nota: "Бандонеон, гитары и рэп на предельной скорости — чтобы говорить с человечеством, как со старой знакомой, которая всегда возвращается на тот же угол. На этот раз кто-то сберёг для неё место у костра." },
+    en: { titulo: "Humanity", escena: "In the same trap again", nota: "Bandoneon, guitars and full-speed rap to talk to humanity like an old acquaintance who always ends up back on the same corner. This time, someone saved it a place by the campfire." }
+  },
+  "08-al-mejor-postor": {
+    ru: { titulo: "Тому, кто больше заплатит", escena: "Для тех, кто продаётся", nota: "Только рэп, далёкие моторы и хор низких голосов — для тех, кто меняет хозяев, как футболки. И открытая дверь для того, кто устанет иметь цену." },
+    en: { titulo: "To the Highest Bidder", escena: "For those who sell themselves", nota: "Just rap, distant engines and a chorus of deep voices for those who change bosses like T-shirts. And an open door for anyone who gets tired of having a price." }
+  },
+  "09-manana-siempre-es-mejor-version-rap": {
+    ru: { titulo: "Завтра всегда лучше (рэп-версия)", escena: "Для тебя, любовь моя", nota: "Песня, которую Наталья спела на площади, превращённая в рэп для одного голоса, со скрипкой и фортепиано. Посвящение." },
+    en: { titulo: "Tomorrow Is Always Better (rap version)", escena: "For you, my love", nota: "The song Natalia sang in the square, turned into rap for a single voice, with violin and piano. A tribute." }
+  },
+  "10-imperfeccion": {
+    ru: { titulo: "Несовершенство", escena: "То, что нельзя исправить" },
+    en: { titulo: "Imperfection", escena: "What can't be fixed" }
+  }
+};

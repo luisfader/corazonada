@@ -119,3 +119,22 @@ h1 span { color: var(--turq); }
   .pcover { width: 44px; height: 44px; }
   .pseek { grid-column: 1 / -1; }
 }
+
+/* Idiomas */
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.langs { display: flex; gap: 4px; padding: 3px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; background: rgba(11,15,18,.45); }
+.langs button {
+  background: none; border: 0; color: var(--ink); opacity: .65; cursor: pointer;
+  font: 600 12px var(--sans); letter-spacing: .08em; padding: 5px 11px; border-radius: 999px; transition: opacity .15s, background .15s;
+}
+.langs button:hover { opacity: 1; }
+.langs button[aria-pressed="true"] { opacity: 1; background: var(--turq); color: #08201d; }
+.album-tr { margin: -6px 0 14px; color: var(--muted); font-size: 15px; font-style: italic; }
+.ttr { display: block; font-size: 14px; color: var(--ink); opacity: .8; }
+.ttr[hidden] { display: none; }
+.lyr-tools { margin: 0 0 18px; }
+.lyr-switch {
+  background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 999px;
+  padding: 4px 12px; font-size: 12px; cursor: pointer;
+}
+.lyr-switch:hover { color: var(--ink); border-color: var(--turq); }
