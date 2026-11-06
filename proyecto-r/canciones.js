@@ -66,5 +66,11 @@ window.CANCIONES = [
     escena: "Para vos, mi amor",
     nota: "La canción que Natalia cantó en la plaza, convertida en rap por una sola voz, con violín y piano. Un homenaje.",
     duracion: "3:23"
+  },
+  {
+    id: "10-imperfeccion",
+    titulo: "Imperfección",
+    escena: "Lo que no se puede arreglar",
+    duracion: "3:55"
   }
 ];
