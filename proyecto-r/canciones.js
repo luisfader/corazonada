@@ -24,5 +24,12 @@ window.CANCIONES = [
     escena: "Del búnker al fogón",
     nota: "Setecientos treinta días encerrado, una moto vieja y un mundo vacío. Empieza como una pregunta en la soledad y termina alrededor del fuego, con cincuenta personas que ya no están solas.",
     duracion: "3:43"
+  },
+  {
+    id: "04-mi-corazonada-version-melodica",
+    titulo: "Mi corazonada (versión melódica)",
+    escena: "La misma búsqueda, cantada",
+    nota: "Otra forma de contar el camino del búnker al fogón: menos rap y más melodía.",
+    duracion: "4:00"
   }
 ];
