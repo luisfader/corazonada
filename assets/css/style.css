@@ -163,7 +163,7 @@ body.is-playing .player { background: rgba(12,22,24,.94); }
 
 /* acceso a Proyecto R */
 .band-card {
-  display: flex; flex-direction: column; gap: 2px; margin: 40px 0 0; padding: 22px 24px;
+  display: flex; align-items: center; gap: 20px; margin: 40px 0 0; padding: 16px;
   background: linear-gradient(120deg, #0d0d0e, #1d1413); border: 1px solid #3a2420; border-left: 4px solid #c9442c;
   border-radius: 10px; text-decoration: none; color: var(--ink); transition: transform .15s, border-color .2s;
 }
@@ -171,3 +171,6 @@ body.is-playing .player { background: rgba(12,22,24,.94); }
 .band-card .eyebrow { margin: 0; }
 .band-name { font: 400 40px/1 Impact, "Anton", sans-serif; text-transform: uppercase; letter-spacing: .02em; color: #ececec; }
 .band-sub { font-size: 14px; color: var(--muted); }
+.band-card img { width: 120px; height: 120px; object-fit: cover; border-radius: 6px; flex: none; box-shadow: 0 10px 24px rgba(0,0,0,.5); }
+.band-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+@media (max-width: 640px) { .band-card img { width: 84px; height: 84px; } .band-name { font-size: 30px; } }
