@@ -160,3 +160,14 @@ body.is-playing .player { background: rgba(12,22,24,.94); }
   .tplay { width: 40px; height: 40px; }
   .lyrics { padding: 20px; }
 }
+
+/* acceso a Proyecto R */
+.band-card {
+  display: flex; flex-direction: column; gap: 2px; margin: 40px 0 0; padding: 22px 24px;
+  background: linear-gradient(120deg, #0d0d0e, #1d1413); border: 1px solid #3a2420; border-left: 4px solid #c9442c;
+  border-radius: 10px; text-decoration: none; color: var(--ink); transition: transform .15s, border-color .2s;
+}
+.band-card:hover { transform: translateY(-2px); border-color: #c9442c; }
+.band-card .eyebrow { margin: 0; }
+.band-name { font: 400 40px/1 Impact, "Anton", sans-serif; text-transform: uppercase; letter-spacing: .02em; color: #ececec; }
+.band-sub { font-size: 14px; color: var(--muted); }
