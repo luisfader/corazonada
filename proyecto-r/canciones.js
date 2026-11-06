@@ -45,5 +45,12 @@ window.CANCIONES = [
     escena: "El palacio debajo de la arena",
     nota: "Mientras arriba el pueblo pelea por calor, unos pocos se encerraron bajo tierra con la despensa llena y luz de mentira. Rap rápido y sarcástico, hasta que se abren las compuertas.",
     duracion: "3:49"
+  },
+  {
+    id: "07-humanidad",
+    titulo: "Humanidad",
+    escena: "Otra vez en la misma trampa",
+    nota: "Bandoneón, guitarras y rap a toda velocidad para hablarle a la humanidad como a una vieja conocida que siempre vuelve a la misma esquina. Esta vez, alguien le guardó un lugar junto al fogón.",
+    duracion: "4:20"
   }
 ];
