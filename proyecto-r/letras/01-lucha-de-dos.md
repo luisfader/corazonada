@@ -1,13 +1,15 @@
 # Lucha de Dos
 
-<!-- estilo: nu metal, rock argentino, drop-tuned guitars, rapped verses, sung and screamed chorus, male vocals, 100 bpm, breakdown. Duración objetivo: ~3:35 -->
+<!-- estilo: nu metal, rock argentino, drop-tuned guitars, male vocals, no screaming, rapped verses, melodic sung chorus, whispered vocals in the bridge and outro, 100 bpm, breakdown. Duración objetivo: ~3:35 -->
 
 [Intro]
 *(riff de guitarra afinada en drop, 8 compases)*
 
-[Verso 1]
+[Verso 1 — susurrado]
 En este mundo caótico, donde el odio va a reinar,
 te amo en la profundidad, aunque me quieran silenciar.
+
+[Verso 1 — rapeado]
 Tus ojos son mi refugio, mi luz en la oscuridad,
 cada latido que siento es un grito de verdad.
 El sistema es un monstruo que nos quiere separar,
@@ -15,13 +17,13 @@ pero nuestro amor es fuego, no lo van a apagar.
 En el desasosiego siento la conexión,
 rompiendo las cadenas con nuestra pasión.
 
-[Estribillo]
+[Estribillo — cantado]
 Voy a luchar por vos, contra viento y marea,
 aunque este mundo inmundo nos empuje a la pelea.
 En medio del caos, en la tormenta y el sol,
 te voy a adorar, mi vida, con todo el corazón.
 
-[Verso 2]
+[Verso 2 — rapeado]
 De espinas en el pecho nacen rosas del dolor,
 aunque el miedo me abrace, te elijo igual, mi amor.
 Tu risa es mi salvación, mi balada en el rencor,
@@ -31,27 +33,27 @@ en el eco de la lucha tu voz me vuelve a encontrar.
 Esa fuerza que me empuja, ese lazo feroz:
 nuestro amor es un guerrero que no baja la voz.
 
-[Estribillo]
+[Estribillo — cantado]
 Voy a luchar por vos, contra viento y marea,
 aunque este mundo inmundo nos empuje a la pelea.
 En medio del caos, en la tormenta y el sol,
 te voy a adorar, mi vida, con todo el corazón.
 
-[Puente]
+[Puente — susurrado]
 Bajo el peso del mundo, distintos y unidos,
 nuestra esencia es un grito, un amor no rendido.
 Rompiendo las normas, enfrentando la verdad,
 juntos en este viaje desatamos la tempestad.
 
-[Breakdown]
+[Breakdown — instrumental]
 *(8 compases)*
 
-[Estribillo final]
+[Estribillo final — cantado, con fuerza]
 Voy a luchar por vos, contra viento y marea,
 aunque este mundo inmundo nos empuje a la pelea.
 En medio del caos, en la tormenta y el sol,
 te voy a adorar, mi vida, con todo el corazón.
 
-[Final]
+[Final — susurrado]
 Te amo en lo profundo, en cada rincón,
 voy a luchar por vos sin ninguna condición.

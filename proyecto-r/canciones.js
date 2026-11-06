@@ -9,7 +9,7 @@ window.CANCIONES = [
     voz: "Proyecto R",
     escena: "Dos contra el sistema",
     capitulo: "Pista 1 · drop D · 100 bpm",
-    nota: "Una canción de amor gritada en medio del caos: versos rapeados, estribillo que termina en grito y un breakdown antes del último estribillo.",
+    nota: "Una canción de amor en medio del caos, sin gritos: arranca y termina en susurros, versos rapeados, estribillo melódico y un breakdown antes del último estribillo.",
     duracion: "3:35",
     audio: false
   }
