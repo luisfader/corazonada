@@ -17,5 +17,12 @@ window.CANCIONES = [
     escena: "El caballero de hierro contra la serpiente imperial",
     nota: "Un caballero en moto, una fortaleza de muros turquesa y una serpiente de orugas y acero que promete libertad pero viene por el subsuelo.",
     duracion: "3:00"
+  },
+  {
+    id: "03-mi-corazonada",
+    titulo: "Mi corazonada",
+    escena: "Del búnker al fogón",
+    nota: "Setecientos treinta días encerrado, una moto vieja y un mundo vacío. Empieza como una pregunta en la soledad y termina alrededor del fuego, con cincuenta personas que ya no están solas.",
+    duracion: "3:43"
   }
 ];
