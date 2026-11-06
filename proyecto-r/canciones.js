@@ -7,7 +7,7 @@ window.CANCIONES = [
   {
     id: "01-la-lucha-de-a-dos",
     titulo: "La lucha de a dos",
-    escena: "Dos contra el sistema",
+    escena: "Dos para la esperanza",
     nota: "Una canción de amor en medio del caos: empieza y termina en susurros, y en el medio, dos personas que se eligen aunque el mundo los quiera separar.",
     duracion: "3:18"
   },
