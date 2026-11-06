@@ -3,61 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto R — nu metal argentino</title>
-  <meta name="description" content="Proyecto R, banda ficticia de nu metal argentino. Canciones y letras.">
+  <title>Proyecto R — «Nuestra Utopía»</title>
+  <meta name="description" content="Proyecto R, banda ficticia de rap y nu metal argentino. Disco «Nuestra Utopía», del universo de «La Corazonada».">
   <meta property="og:title" content="Proyecto R — «Nuestra Utopía»">
-  <meta property="og:description" content="Proyecto R, banda ficticia de rap y nu metal argentino. Disco «Nuestra Utopía».">
+  <meta property="og:description" content="Rap y nu metal argentino desde los muros de la fortaleza turquesa.">
   <meta property="og:image" content="https://luisfader.github.io/corazonada/proyecto-r/img/nuestra-utopia.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/nuestra-utopia-400.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
   <header class="hero">
     <img class="hero-bg" src="img/nuestra-utopia.jpg" alt="">
+    <nav class="wrap top"><a href="../">← La Corazonada</a></nav>
     <div class="wrap hero-inner">
-      <img class="album-cover" src="img/nuestra-utopia.jpg" alt="Portada del disco «Nuestra Utopía» de Proyecto R: la fortaleza turquesa sobre el lago y el nombre de la banda pintado en el muro" width="600" height="600">
-      <div>
-      <p class="eyebrow">Nu metal · Buenos Aires</p>
-      <h1>Proyecto <em>R</em></h1>
-      <p class="album">Disco: <strong>«Nuestra Utopía»</strong></p>
-      <p class="lead">Rap y nu metal desde los muros de la fortaleza turquesa: versos rapeados, susurros y estribillos para cantar con la plaza.</p>
-      <button class="btn" id="playAll" type="button">▶ Escuchar desde el principio</button>
+      <img class="album-cover" src="img/nuestra-utopia.jpg" alt="Portada de «Nuestra Utopía»: la fortaleza turquesa sobre el lago y «Proyecto R» pintado en el muro" width="600" height="600">
+      <div class="hero-text">
+        <p class="eyebrow">Disco · Proyecto R</p>
+        <h1>Nuestra <span>Utopía</span></h1>
+        <p class="meta"><strong>Proyecto R</strong> · Rap y nu metal argentino · <span id="albumMeta"></span></p>
+        <button class="btn" id="playAll" type="button">▶ Escuchar el disco</button>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <h2 class="section-title">Nuestra Utopía</h2>
     <ol class="tracks" id="tracks"></ol>
 
-    <section class="lyrics" id="lyrics" hidden>
-      <p class="eyebrow" id="lyricsScene"></p>
-      <h2 id="lyricsTitle"></h2>
-      <div id="lyricsBody" class="lyrics-body"></div>
+    <section class="about">
+      <h2>Sobre el disco</h2>
+      <p>Proyecto R hace rap y nu metal con acento rioplatense: versos rapeados, partes susurradas, estribillos para cantar en grupo y nada de gritos. En <em>Nuestra Utopía</em> canta desde el mundo de <a href="https://luisfader.github.io/litmir/?lang=es#/la-corazonada">«La Corazonada»</a>: la fortaleza de muros turquesa junto al lago, el desierto y la gente que decidió vivir sin miedo ni codicia.</p>
+      <p class="small">Proyecto R es una banda ficticia. Música y letras: Luis Fader.</p>
     </section>
   </main>
 
   <footer class="wrap foot">
-    <p>Proyecto R es una banda ficticia. Música y letras: Luis Fader · <a href="../">Volver a La Corazonada</a></p>
+    <a href="../">← Las canciones de Natalia</a>
   </footer>
 
   <div class="player" id="player" hidden>
-    <button class="pbtn" id="prev" type="button" aria-label="Anterior">⏮</button>
-    <button class="pbtn big" id="toggle" type="button" aria-label="Reproducir">▶</button>
-    <button class="pbtn" id="next" type="button" aria-label="Siguiente">⏭</button>
+    <img class="pcover" src="img/nuestra-utopia-400.jpg" alt="" width="48" height="48">
     <div class="pinfo">
       <span id="nowTitle"></span>
-      <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Posición">
+      <span id="nowSub"></span>
     </div>
-    <span class="ptime" id="time">0:00</span>
+    <div class="pctrl">
+      <button class="pbtn" id="prev" type="button" aria-label="Anterior">⏮</button>
+      <button class="pbtn big" id="toggle" type="button" aria-label="Reproducir">▶</button>
+      <button class="pbtn" id="next" type="button" aria-label="Siguiente">⏭</button>
+    </div>
+    <div class="pseek">
+      <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Posición">
+      <span class="ptime" id="time">0:00</span>
+    </div>
   </div>
   <audio id="audio" preload="none"></audio>
 
   <script src="canciones.js"></script>
-  <script src="../assets/js/app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
